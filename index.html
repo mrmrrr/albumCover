@@ -12,7 +12,7 @@
 
 <div style='position:relative;'>
 
-	<svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 3842 1921" style="position:absolute; enable-background:new 0 0 3842 1921; ">
+	<svg x="0px" y="0px" viewBox="0 0 3842 1921" style="position:absolute;">
 		
 		
 		<foreignObject id='svgHud' x="885" y="305" width="1494" height="1449">
@@ -22,9 +22,9 @@
 		</foreignObject>
 		
 
-		<foreignObject x="3512.5" y="290.6" class="st50" width="305.5" height="436">
+		<foreignObject x="3512.5" y="290.6" width="305.5" height="436">
 			<div style='display:flex; justify-content:center;align-items:center;'>
-				<video  width='55%' src='img/p11-particles.mp4' autoplay muted loop></video>
+				<video id='p11particles' style='opacity:0; transition:opacity 2s;' width='55%' src='img/p11-particles.mp4' autoplay muted loop></video>
 			</div>
 		</foreignObject>
 
@@ -70,13 +70,10 @@
 
 
 
-<svg width='100%' id="ui" x="0px" y="0px" viewBox="0 0 3842 1921" style="position:absolute; enable-background:new 0 0 3842 1921; display:none;">
+<svg width='100%' id="ui" x="0px" y="0px" viewBox="0 0 3842 1921" style="position:absolute; display:none;">
 	
 	
 	<defs>
-
-		<!-- <linearGradient id="p2NewG" gradientUnits="userSpaceOnUse" x1="30.25" y1="896.7" x2="173.85" y2="896.7" gradientTransform="matrix(1 0 0 -1 0 1922)"> -->
-
 		<g id="header-icon">
 			<rect x="0.5" y="10.1" class="st6new" width="16.1" height="2.6"/>
 			<rect x="0.5" y="14.7" class="st6new" width="16.1" height="2.6"/>
@@ -210,7 +207,6 @@
 			</feMerge>
 		</filter>
 
-		
 		<filter id='fe-p17-btn' x="-50%" y="-700%" width="200%" height="2000%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
 			<feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#fd0098" flood-opacity="1" />
 			<feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#fd0098" flood-opacity="1" />
@@ -10970,18 +10966,8 @@
 		</div>
 	</foreignObject> -->
 	
-	
-	
-
-	
-
-
-	
-	
-	
 </svg>
 </div>
-
 	<script type='module' src="js/Draggable.js"></script>
 	<script type='module' src="js/CustomEase.js"></script>
 	<script type='module' src="js/paths.js"></script>

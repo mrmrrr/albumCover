@@ -419,7 +419,7 @@ $('p11-ui').style.display='none';
 function p11_flick() {
 
     $('p11-main').style.display = 'block';
-
+    $('p11particles').style.opacity=1;
     gsap.from('#p11-border-top', 0.5, {scaleX: 0, transformOrigin:'left'});
     gsap.from('#p11-border-left', 0.5, {scaleY: 0, transformOrigin: 'top', delay:0.5});
     gsap.from('#p11-border-bottom', 0.5, {scaleX: 0, transformOrigin:'left'});

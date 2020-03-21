@@ -1,17 +1,9 @@
-body { 
-    margin: 0;
-    /* background-image: url('../img/bg-01.png'); */
-    /* background-repeat: repeat; */
-    /* background-size:60px 60px; */
-    /* height:100%; */
-}
+body {margin: 0;}
 
 #container{
     display:flex;
     justify-content: center;
     align-items: center;
-    /* position:relative; */
-    /* width:100%; */
     height:100vh;
 }
 
@@ -26,12 +18,12 @@ body {
     scrollbar-color: #1D1D1B;
     border: #1D1D1B solid;
 }
+
 #hidescroll {
     position: absolute;
     width: 17px;
     top: 0;
     right: 0px;
-    /* z-index: 1000; */
     height: 100%;
     border-left:1px solid #1D1D1B;
     background-color: #1D1D1B;
@@ -63,115 +55,44 @@ body {
     justify-content:center;
     align-items:center;
     pointer-events: all;
-    /* backdrop-filter: blur(10px);   */
 }
 
 
-#soHeavyYT{
-    overflow: visible;
-}
-#soHeavyYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#soHeavyYT>*:hover{
-    opacity:1;
-}
+#soHeavyYT{overflow: visible;}
+#soHeavyYT>*{opacity:0.7;transition:opacity 0.3s;}
+#soHeavyYT>*:hover{opacity:1;}
 
-#darksideYT{
-    overflow:visible;
-}
-#darksideYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#darksideYT>*:hover{
-    opacity:1;
-}
+#darksideYT{overflow:visible;}
+#darksideYT>*{opacity:0.7;transition:opacity 0.3s;}
+#darksideYT>*:hover{opacity:1;}
 
-#_4AMYT{
-    overflow:visible;
-}
-#_4AMYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#_4AMYT>*:hover{
-    opacity:1;
-}
+#_4AMYT{overflow:visible;}
+#_4AMYT>*{opacity:0.7;transition:opacity 0.3s;}
+#_4AMYT>*:hover{opacity:1;}
 
-#violenceYT{
-    overflow:visible;
-}
-#violenceYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#violenceYT>*:hover{
-    opacity:1;
-}
+#violenceYT{overflow:visible;}
+#violenceYT>*{opacity:0.7;transition:opacity 0.3s;}
+#violenceYT>*:hover{opacity:1;}
 
-#myNameIsDarkYT{
-    overflow:visible;
-}
-#myNameIsDarkYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#myNameIsDarkYT>*:hover{
-    opacity:1;
-}
+#myNameIsDarkYT{overflow:visible;}
+#myNameIsDarkYT>*{opacity:0.7;transition:opacity 0.3s;}
+#myNameIsDarkYT>*:hover{opacity:1;}
 
-#dFYT{
-    overflow:visible;
-}
-#dFYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#dFYT>*:hover{
-    opacity:1;
-}
-#ngYT{
-    overflow:visible;
-}
-#ngYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#ngYT>*:hover{
-    opacity:1;
-}
-#missMeYT{
-    overflow:visible;
-}
-#missMeYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#missMeYT>*:hover{
-    opacity:1;
-}
-#feverYT{
-    overflow:visible;
-}
-#feverYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#feverYT>*:hover{
-    opacity:1;
-}
-#idoruYT{
-    overflow:visible;
-}
-#idoruYT>*{
-    opacity:0.7;
-    transition:opacity 0.3s;
-}
-#idoruYT>*:hover{
-    opacity:1;
-}
+#dFYT{overflow:visible;}
+#dFYT>*{opacity:0.7;transition:opacity 0.3s;}
+#dFYT>*:hover{opacity:1;}
+#ngYT{overflow:visible;}
+#ngYT>*{opacity:0.7;transition:opacity 0.3s;}
+#ngYT>*:hover{opacity:1;}
+#missMeYT{overflow:visible;}
+#missMeYT>*{opacity:0.7;transition:opacity 0.3s;}
+#missMeYT>*:hover{opacity:1;}
+#feverYT{overflow:visible;}
+#feverYT>*{opacity:0.7;transition:opacity 0.3s;}
+#feverYT>*:hover{opacity:1;}
+#idoruYT{overflow:visible;}
+#idoruYT>*{opacity:0.7;transition:opacity 0.3s;}
+#idoruYT>*:hover{opacity:1;}
 
 
 
@@ -228,20 +149,14 @@ body {
     stroke-width:2;
 }
 
-.over{
-    opacity:0;
-    transition: 0.5s;
-}
+.over{opacity:0;transition: 0.5s;}
 .over:hover{
     fill:#f60094;
     filter:url(#shadow);
     transition: 0.2s;
     opacity:1;
 }
-.over2{
-    opacity:0;
-    transition: 0.5s;
-}
+.over2{opacity:0;transition: 0.5s;}
 .over2:hover{
     fill:#f60094;
     filter:url(#fe-p16-btn2);
@@ -249,53 +164,25 @@ body {
     opacity:1;
 }
 
-.over3{
-    opacity:0;
-    transition: 0.5s;
-}
-.over3:hover{
-    fill:#f60094;
-    transition: 0.2s;
-    opacity:1;
-}
-.over4{
-    opacity:0;
-    transition: 0.5s;
-}
-.over4:hover{
-    transition: 0.2s;
-    opacity:1;
-}
-
-.over5{
-    opacity:1;
-}
+.over3{opacity:0;transition: 0.5s;}
+.over3:hover{fill:#f60094;transition: 0.2s;opacity:1;}
+.over4{opacity:0;transition: 0.5s;}
+.over4:hover{transition: 0.2s;opacity:1;}
+.over5{opacity:1;}
 
 
-.bar{
-    fill:white;
-}
+.bar{fill:white;}
 
-
-/* .songName{
-    stroke:#f60094;
-    fill:none;
-} */
-.nameSongG{
-    stroke:#FF00FF;
-    fill:transparent;
-}
+.nameSongG{stroke:#FF00FF;fill:transparent;}
 .nameSongG:hover{
     fill:#ff0099;
     stroke:none;
-    filter:url(#fe-p17-btn);
-    /* pointer-events: all; */
+    filter:url(#fe-p17-btn2);
 }
 .songSelect{
     fill:#ff0099;
     stroke:none;
-    filter:url(#fe-p17-btn);
-    /* pointer-events: all; */
+    filter:url(#fe-p17-btn2);
 }
 
 .art{
@@ -304,9 +191,7 @@ body {
     transition: filter 2s;
     opacity:0.5;
 }
-#ui{
-    transition:opacity 2s;
-}
+#ui{transition:opacity 2s;}
 
 .st19{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .st81{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
@@ -329,8 +214,6 @@ body {
 .st190{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
 
 .st125{fill:#8F4874;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-
-.st154{fill:none;stroke:none;stroke-width:2;stroke-miterlimit:10;}
 
 .st12{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
     
@@ -381,8 +264,6 @@ body {
 .st143new{fill:url(#SVGID_6_);}
 .st144new{fill:url(#SVGID_7_);}
 
-
-
 .st118{opacity:0.3;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 .st54{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 .st162{opacity:0.3;fill:#FFFFFF;}
@@ -390,7 +271,6 @@ body {
 .st71{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 
 .st164{opacity:0.1;fill:none;stroke:#FFFFFF;stroke-width:0.9998;stroke-miterlimit:10;}
-
 
 .st196{opacity:0.5;fill:#383838;}
 .st204{font-family:SF Pro Display; text-transform: uppercase;}
@@ -406,6 +286,8 @@ body {
 .st203{font-size:7px;}
 .st205{font-size:30px;}
 .st201{fill:#141414;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st201a{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
+
 .st202a{opacity:0.2;fill:#995883;}
 
 .st51a{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
@@ -415,3 +297,21 @@ body {
 .st3{fill:none;stroke:#736F70;stroke-width:1;stroke-miterlimit:10;}
 .st2b{fill:none;stroke:#5E5F5F;stroke-width:0.5;stroke-miterlimit:10;}
 .st1a{opacity:0.3;}
+
+.p11icon{fill:transparent;stroke:none;}
+.p11icon:hover{fill:url(#g-p17-btn);}
+
+.g1{fill:url(#g11);}
+.g2{fill:url(#g22);}
+.g3{fill:url(#g33);}
+.g4{fill:url(#g44);}
+
+.st224{clip-path:url(#SVGID_16_);}
+.st218{fill:#212121;}
+.st219{opacity:0.5;fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+.st220{opacity:0.3;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st221{opacity:0.5;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+.st214{fill:#FF5559;}
+.st225{opacity:0.4;}
+.st226{fill:url(#SVGID_17_);stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+.st227{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}

@@ -98,33 +98,57 @@ function flick(){
 function elementsBack(){
 
     let region = $('codeRegion');
+    let region2 = $('codeRegion2');
+
     let elements = {
         dots:$('dots'),
-        line45:$('lines45'),
-        lineVertical:$('line'),
-        aim:$('aim'),
+        dots2:$('dots2'),
+        dots3:$('dots3'),
+        dots4:$('dots4'),
+        line:$('line'),
+        lineS:$('lineS'),
         square:$('square'),
+        square1:$('square1'),
+        square2:$('square2'),
         triangle:$('triangle'),
         krug:$('krug'),
+        triangle1:$('triangle1'),
+        krug2:$('krug2'),
+        lineVertical:$('line'),
+        aim:$('aim'),
         diagonals:$('lineS'),
-        cross:$('cross')
+        cross:$('cross'),
+        panel:$('panel'),
+        boldLines:$('boldLines')
     }
         
     let r = randomProperty(elements);
+    let r2 = randomProperty(elements);
 
     let rx = between(
-            0,
-            region.getBBox().width 
-            );
+        0,
+        region.getBBox().width 
+    );
 
     let ry = between(
-            0,
-            region.getBBox().height
-            );
+        0,
+        region.getBBox().height
+    );
+
+    let rx2 = between(
+        0,
+        region2.getBBox().width 
+    )+region2.getBBox().width;
+    
+    let ry2 = between(
+        0,
+        region2.getBBox().height
+    );
 
     r.style.transform = 'translate('+rx+'px,'+ry+'px)';
+    r2.style.transform = 'translate('+rx2+'px,'+ry2+'px)';
 
-    rx, ry = 0;
+    rx, ry, rx2, ry2 = 0;
 }
 
 function wireButtonsAnimation(){

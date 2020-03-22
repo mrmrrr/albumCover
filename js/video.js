@@ -1,7 +1,7 @@
 // 2. This code loads the IFrame Player API code asynchronously.
 // Inject YouTube API script
 var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
+tag.src = "//youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // 3. This function creates an <iframe> (and YouTube player)

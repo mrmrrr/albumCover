@@ -2,6 +2,9 @@ var $ = function( id ) { return document.getElementById( id ); };
 
 var tHud;
 
+if(window.matchMedia("(max-width: 1024px)").matches){
+    gsap.set('svg',{rotate:90,scale:2,y:735});
+}
 
 gsap.ticker.fps(60);
 

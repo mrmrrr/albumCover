@@ -61,9 +61,7 @@ body {margin: 0; font-family: 'SF Pro Display', Arial, sans-serif;}
 
 
 #soHeavyYT{
-    width:1px;
-    height:1px;
-    overflow: visible;
+        overflow: visible;
     }
 #soHeavyYT>*{opacity:0.7;transition:opacity 0.3s;}
 #soHeavyYT>*:hover{opacity:1;}

@@ -663,6 +663,8 @@ $('soHeavyYT').style.display='none';
 function so_heavy(){
     $('soHeavyYT').style.display='block';
     $('soHeavyYT').style.visibility='visible';
+    $('soHeavyYT').style.width='1px';
+    $('soHeavyYT').style.height='1px';
     Draggable.create('#soHeavyYT');
     if(!$('s1').classList.contains('songSelect')){
         $('s1').classList.add('songSelect');

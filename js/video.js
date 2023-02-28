@@ -26,7 +26,7 @@ function onYouTubeIframeAPIReady() {
       height: '1000',
       width: '2000',
       videoId: 'iH0kfH04U68',
-      playerVars: { 'controls': 0 },
+      playerVars: { 'controls': 0, 'muted': 1},
       events: {
         'onReady': onPlayerReadyHeavy,
         'onStateChange': onPlayerStateChange

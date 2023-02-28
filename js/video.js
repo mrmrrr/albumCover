@@ -140,7 +140,7 @@ function onPlayerReady(event) {
 }
 function onPlayerReadyHeavy(event) {
     if($('soHeavyYT').style.display=='block'){
-        
+        console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         event.target.playVideo();
     }
 }

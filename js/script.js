@@ -661,6 +661,8 @@ function p18_btn_flick() {
 
 $('soHeavyYT').style.display='none';
 function so_heavy(){
+    $('soHeavyYT').style.width='100 px';
+    $('soHeavyYT').style.height='100 px';
     $('soHeavyYT').style.display='block';
     $('soHeavyYT').style.visibility='visible';
     

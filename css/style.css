@@ -296,9 +296,7 @@ body {
     transition: 0.2s;
     opacity:1;
 }
-/* .overClick{
-    fill:#a6ff00;
-} */
+
 
 .over4{
     opacity:0;
@@ -319,7 +317,10 @@ body {
 }
 
 
-
+/* .songName{
+    stroke:#f60094;
+    fill:none;
+} */
 .nameSongG{
     stroke:#FF00FF;
     fill:transparent;

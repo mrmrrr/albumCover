@@ -2,8 +2,14 @@
 // Inject YouTube API script
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+document.body.appendChild(tag);
+
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// document.body.insertBefore(tag, document.getElementById('beforeSoHeavy'));
+	// здесь див куда вставляется поеер, див id playerSoHeavy
+	
+
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 var SoHeavy;
@@ -17,30 +23,26 @@ var missMe;
 var fever;
 var idoru;
 
-
-
-
 function onYouTubeIframeAPIReady() {
 
     SoHeavy = new YT.Player('playerSoHeavy', {
-      height: '1000',
-      width: '2000',
-      videoId: 'iH0kfH04U68',
-      playerVars: { 'controls': 0, },
-      mute: 1,
-      events: {
-        'onReady': onPlayerReadyHeavy,
-        'onStateChange': onPlayerStateChange
-      }
+		height: '600',
+		width: '1200',
+		videoId: 'iH0kfH04U68',
+		playerVars: { 'playsinline': 1 },
+		events: {
+			'onReady': onPlayerReadyHeavy,
+			'onStateChange': onPlayerStateChange
+		}
     });
 
     Darkside = new YT.Player('playerDarkside', {
         height: '500',
         width: '500',
         videoId: 'hbuFn2Mp7go',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
-          'onReady': onPlayerReadyDarkside,
+		  'onReady': onPlayerReadyDarkside,
           'onStateChange': onPlayerStateChange
         }
     });
@@ -49,7 +51,7 @@ function onYouTubeIframeAPIReady() {
         height: '1000',
         width: '2000',
         videoId: 'Q4ZdkEiYvK0',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReady4,
           'onStateChange': onPlayerStateChange
@@ -60,7 +62,7 @@ function onYouTubeIframeAPIReady() {
         height: '1921',
         width: '3842',
         videoId: 'M9SGYBHY0qs',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyViolence,
           'onStateChange': onPlayerStateChange
@@ -71,7 +73,7 @@ function onYouTubeIframeAPIReady() {
         height: '500',
         width: '500',
         videoId: 'CZe7cbC2Jp8',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyDark,
           'onStateChange': onPlayerStateChange
@@ -82,7 +84,7 @@ function onYouTubeIframeAPIReady() {
         height: '1921',
         width: '3842',
         videoId: 'gvzC8MmC850',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyDF,
           'onStateChange': onPlayerStateChange
@@ -93,7 +95,7 @@ function onYouTubeIframeAPIReady() {
         height: '500',
         width: '500',
         videoId: 'JMNnAAmCbcg',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyNG,
           'onStateChange': onPlayerStateChange
@@ -104,7 +106,7 @@ function onYouTubeIframeAPIReady() {
         height: '500',
         width: '500',
         videoId: 'AjLunSai7Z0',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyMiss,
           'onStateChange': onPlayerStateChange
@@ -115,7 +117,7 @@ function onYouTubeIframeAPIReady() {
         height: '500',
         width: '500',
         videoId: 'DZbyt15HuKM',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyFever,
           'onStateChange': onPlayerStateChange
@@ -126,10 +128,10 @@ function onYouTubeIframeAPIReady() {
         height: '1921',
         width: '3842',
         videoId: 'oCrhTU9HkVQ',
-        playerVars: { 'controls': 0 },
+        playerVars: { 'playsinline': 1 },
         events: {
           'onReady': onPlayerReadyIdoru,
-          'onStateChange': onPlayerStateChangeIdoru
+          'onStateChange': onPlayerStateChange
         }
     });
 }
@@ -137,65 +139,55 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 
 function onPlayerReady(event) {
-        // event.target.playVideo();
+        event.target.playVideo();
 }
 function onPlayerReadyHeavy(event) {
     if($('soHeavyYT').style.display=='block'){
-        console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         event.target.playVideo();
     }
 }
 function onPlayerReadyDarkside(event) {
     if($('darksideYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReady4(event) {
     if($('_4AMYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyViolence(event) {
     if($('violenceYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyDark(event) {
     if($('myNameIsDarkYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyDF(event) {
     if($('dFYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyNG(event) {
     if($('ngYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyMiss(event) {
     if($('missMeYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyFever(event) {
     if($('feverYT').style.display=='block'){
-        
         event.target.playVideo();
     }
 }
 function onPlayerReadyIdoru(event) {
     if($('idoruYT').style.display=='block'){
-        console.log('ReadyState')
         event.target.playVideo();
     }
 }
@@ -207,15 +199,9 @@ function onPlayerReadyIdoru(event) {
 
 function onPlayerStateChange(event) {
    
-    event.target.stopVideo();
+    // event.target.stopVideo();
 }
 
-function onPlayerStateChangeIdoru(event) {
-    if($('idoruYT').style.display=='block'){
-        console.log('StateChange')
-        event.target.playVideo();
-    }
-}
 
 function soHeavyStopVideo() {
     SoHeavy.stopVideo();
@@ -255,7 +241,8 @@ function idoruStopVideo() {
 function closeSoHeavy(){
     SoHeavy.stopVideo();
     $('soHeavyYT').style.display='none';
-    $('soHeavyYT').style.visibility='hidden';
+	$('playerSoHeavy').style.display='none';
+
     if($('s1').classList.contains('songSelect')){
         $('s1').classList.remove('songSelect');
     }
@@ -263,7 +250,8 @@ function closeSoHeavy(){
 function closeDarkside(){
     Darkside.stopVideo();
     $('darksideYT').style.display='none';
-    $('darksideYT').style.visibility='hidden';
+    $('playerDarkside').style.display='none';
+
     if($('s2').classList.contains('songSelect')){
         $('s2').classList.remove('songSelect');
     }
@@ -271,7 +259,7 @@ function closeDarkside(){
 function close_4AM(){
     _4AM.stopVideo();
     $('_4AMYT').style.display='none';
-    $('_4AMYT').style.visibility='hidden';
+	$('player_4AM').style.display='none';
     if($('s5').classList.contains('songSelect')){
         $('s5').classList.remove('songSelect');
     }
@@ -282,7 +270,8 @@ function closeViolence(){
     
     Violence.stopVideo();
     $('violenceYT').style.display='none';
-    $('violenceYT').style.visibility='hidden';
+    $('playerViolence').style.display='none';
+
     if($('s4').classList.contains('songSelect')){
         $('s4').classList.remove('songSelect');
     }
@@ -290,7 +279,8 @@ function closeViolence(){
 function closeMyNameIsDark(){
     MyNameIsDark.stopVideo();
     $('myNameIsDarkYT').style.display='none';
-    $('myNameIsDarkYT').style.visibility='hidden';
+    $('playerMyNameIsDark').style.display='none';
+
     if($('s7').classList.contains('songSelect')){
         $('s7').classList.remove('songSelect');
     }
@@ -301,7 +291,6 @@ function closeDF() {
 
     deleteForever.stopVideo();
     $('dFYT').style.display='none';
-    $('dFYT').style.visibility='hidden';
     if($('s3').classList.contains('songSelect')){
         $('s3').classList.remove('songSelect');
     }
@@ -309,7 +298,8 @@ function closeDF() {
 function closeNG() {
     newGods.stopVideo();
     $('ngYT').style.display='none';
-    $('ngYT').style.visibility='hidden';
+    $('beforeNG').style.display='none';
+
     if($('s6').classList.contains('songSelect')){
         $('s6').classList.remove('songSelect');
     }
@@ -317,7 +307,8 @@ function closeNG() {
 function closeMissMe() {
     missMe.stopVideo();
     $('missMeYT').style.display='none';
-    $('missMeYT').style.visibility='hidden';
+    $('beforeMM').style.display='none';
+
     if($('s8').classList.contains('songSelect')){
         $('s8').classList.remove('songSelect');
     }
@@ -325,7 +316,8 @@ function closeMissMe() {
 function closeFever() {
     fever.stopVideo();
     $('feverYT').style.display='none';
-    $('feverYT').style.visibility='hidden';
+    $('beforeFever').style.display='none';
+
     if($('s9').classList.contains('songSelect')){
         $('s9').classList.remove('songSelect');
     }
@@ -338,7 +330,4 @@ function closeIdoru() {
     }
     idoru.stopVideo();
     $('idoruYT').style.display='none';
-    $('idoruYT').style.visibility='hidden';
 }
-
-

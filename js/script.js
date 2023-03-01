@@ -2,6 +2,9 @@ var $ = function( id ) { return document.getElementById( id ); };
 
 var tHud;
 
+if(window.matchMedia("(max-width: 1024px)").matches){
+    gsap.set('svg',{rotate:90,scale:2,y:735});
+}
 
 gsap.ticker.fps(60);
 
@@ -323,7 +326,7 @@ function p6_btn_flick(){
     gsap.from('#p6-meter',1,{opacity:0,delay:1.6});
     gsap.from('#p6-graph',1,{opacity:0,delay:1.9});
 
-    gsap.to('#newReveal',2,{opacity:0,ease:RoughEase.ease.config({points:between(50,150), strength:between(1,4), clamp:true})});
+    gsap.to('#newReveal',2,{opacity:0,ease:RoughEase.ease.config({points:between(50,150), strength:between(1,4), clamp:true}),onComplete:function(){$('topDiagonal').style.display="none"} });
 }
 
 $('p7-main').style.display='none';
@@ -879,7 +882,7 @@ function previewMode(){
     gsap.to('#previewModeCode',2,{opacity:0,delay:5,ease:RoughEase.ease.config({points:200, strength:2, clamp:true})});
 
     gsap.to('#access_denied',0.5,{opacity:0,delay:6});
-    gsap.set('#previewModeOn',{opacity:0,delay:7});
+    gsap.set('#previewModeOn',{opacity:0,delay:6});
 
     setTimeout(songReveal,8000);
 }

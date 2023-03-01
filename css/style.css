@@ -267,24 +267,21 @@ body {
     transition: 0.5s;
 }
 .over:hover{
-    fill:#f60094;
-    filter:url(#shadow);
+    fill:#f600949d;
+    /* filter:url(#shadow); */
     transition: 0.2s;
     opacity:1;
 }
 
 .over2{
-
     opacity:0;
     transition: 0.5s;
 }
 .over2:hover{
-    
     fill:#f60094;
-    filter:url(#fe-p16-btn2);
+    /* filter:url(#fe-p16-btn2); */
     transition: 0.2s;
     opacity:1;
-    
 }
 
 .over3{
